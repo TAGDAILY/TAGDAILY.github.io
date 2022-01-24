@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>二師大附中網路教育資源</title>
+	<link href="https://s3.bmp.ovh/imgs/2022/01/a75b40fb9c0e718d.jpg" rel="icon" type="image/x-ico">
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div align="center">
+	
+		<img style="text-align: center;" src="https://s3.bmp.ovh/imgs/2022/01/32c4d16bd7662bd2.png">
+	</div>
+	
+	<h1 style="text-align: center;"><font color="#FF0000">臺彎島第二師範大學附屬中學</font>·<font color="#0000FF">網路虛擬線上教育</font></h1>
+	<p style="text-align: center;"><font size="4"><font color="#0000FF">Middle School Affiliated To FAKETAIWAN SNU</font> <font color="#FF0000">Virtual Online Education</font></font></p>
+	<div align="center">
+		<h2>欢迎访问 根据定位 系统已自动切换为“中文-简体”</h2>
+		<a href="https://tagdaily.github.io/">
+			<p>(Need more languages?)</p><br>
+		</a>
+		<a href="http://www.people.com.cn/">
+   			 <button class="btn"><span>国家时事新闻</span></button>
+		</a>
+		<br><br>
+		<a href="https://tagdaily.github.io/login.html">
+   			 <button class="btn"><span>师大附中试题</span></button>
+		</a>
+		<br><br>
+		<a href="https://library.koolearn.com/index">
+   			 <button class="btn"><span>公开网课资源</span></button>
+		</a>
+		<br><br>
+		<a href="https://tagdaily.github.io/news.html">
+   			 <button class="btn"><span>每日写作素材</span></button>
+		</a>
+	</div>
+	<br><br><br><br><br><br><br><br><br>
+	
+	
+	
+	<style>
+        .a-text { font-size: 20px;color: #b30000;cursor: pointer;}
+        .a-text:hover { color: red;}
+        .p1 {font-size: 16px;color: #0a001f; }
+        .p2 { font-size: 16px; color: #0a001f; display: none;  }
+    </style>
+	<p class="p1">
+    免责声明：本站不保证资源信息的准确性、有效性、及时性和完整性。本站无须以任何方式就任何信息传递或传送的失误、不准确或错误，对任何用户或任何其他人士负任何直接或间接责任。本站资料来源于网络，由热心网友上传，转载的目的仅供学习交流，并不代表本站赞同其观点和对其真实性负责，也不构成任何其他建议，严禁用于商业用途，文件请于下载后24小时内删除。同时本站与学校以及校内任何学生组织均无任何关联，非校官方网站，学生出于兴趣搭建，站点为非营利性质网站，站点内容仅供娱乐。在法律允许的范围内，本站在此声明，不承担任何用户或任何人士就使用或未能使用本站所提供的信息或任何链接所引致的任何直接、间接、附带、从属、特殊、惩罚性或惩戒性的损害赔偿。如有侵权，请立即与本站联系，我们会第一时间及时处理！本站对此不负任何法律责任！
+	</p>
+	<script src="https://cdn.bootcss.com/jquery/2.1.2/jquery.min.js"></script>
+	<script type="text/javascript">
+    $(function () {
+        text_foled('.p1', 100);
+    });
+
+    /**
+     * jQuery 文本折叠展开特效
+     * @param clas：存放文本的容器
+     * @param num：要显示的字数
+     */
+    function text_foled(clas, num) {
+        var num = num;
+        var a = $("<a></a>").on('click', showText).addClass('a-text').text("【展开】");
+        var b = $("<a></a>").on('click', showText).addClass('a-text').text("【折叠】");
+        var p = $("<p></p>").addClass('p2');
+        var str = $(clas).text();
+        $(clas).after(p);
+        if (str.length > num) {
+            var text = str.substring(0, num) + "...";
+            $(clas).html(text).append(a);
+        }
+        $('.p2').html(str).append(b);
+        function showText() {
+            $(this).parent().hide().siblings().show();
+        }
+    }
+	</script>
+	
+	
+	<div align="center">
+	<a target="_blank" href="https://tagdaily.github.io" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">Copyright ©2022 TAG</p></a>
+	</div>
+</body>
+
+
+<style>
+.btn{
+   width: 390px;
+   height: 120px; 
+   color: #fff; 
+   background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
+   font-family: 'Lato', sans-serif;
+   font-weight: 500;
+   border-radius: 10px;
+   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+   7px 7px 20px 0px rgba(0, 0, 0, .1),
+   4px 4px 5px 0px rgba(0, 0, 0, .1);
+   transition: all 0.3s ease;
+   cursor: pointer;
+   border: none;
+   position: relative;
+   line-height: 120px;
+   padding: 0;
+}
+.btn span{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 48px;
+}
+.btn::before,.btn::after{
+    position:absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    background: rgba(2, 126, 251, 1); 
+    transition: all 0.3s ease;
+}
+.btn::before{
+    width: 0;
+    height: 2px;
+}
+.btn::after{
+    height: 0;
+    width: 2px;
+}
+.btn span::before,
+.btn span::after{
+    position:absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    background: rgba(2, 126, 251, 1);
+    transition: all 0.3s ease;
+}
+.btn span::before{
+    width: 0;
+    height: 2px;
+}
+.btn span::after{
+    height: 0;
+    width: 2px;
+}
+
+.btn:hover{
+    background: transparent;
+    color: rgba(2, 126, 251, 1);
+}
+
+.btn:hover::before{
+    width: 100%;
+}
+.btn:hover::after{
+    height: 100%;
+}
+.btn span:hover::before{
+    width: 100%;
+}
+.btn span:hover::after{
+    height: 100%;
+}
+
+</style>
+</html>
+
+<!--
+	按钮模板转载于：https://blog.csdn.net/weixin_44225182/article/details/115269828
+	折叠模板转载于：https://www.cnblogs.com/lixingwu/p/9249178.html
+-->
